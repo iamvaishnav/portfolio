@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: scroll 0.3s;
+}
+
+body {
+    scrollbar-color: rgb(78, 42, 139);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    grid-column: 1/13;
+    grid-row: 1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+    margin: 10px 5%;
+}
+
+.menu-items {
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-items a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 18px;
+    transition: 0.4s;
+}
+
+.menu-items a:hover {
+    border-color: rgb(80, 36, 124);
+    box-shadow: 0px 0px 18px 2px rgb(78, 42, 139)
+}
+
+.main {
+    display: flex;
+    grid-column: 1/13;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .profile img {
+    max-width: 540px;
+}
+
+.header {
+    max-width: 35%;
+    margin: 5%;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+}
+
+.header h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about {
+    background: #eeeeee;
+    display: flex;
+    grid-column: 1/13;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 600px;
+    padding: 12px;
+    margin: 5% 0 5% 0;
+}
+
+.about .about-info {
+    max-width: 50%;
+    text-align: justify;
+    margin: 3%;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+}
+
+.about .about-info h1 {
+    text-transform: uppercase;
+    text-align: right;
+    color: rgb(78, 42, 139);
+    font-size: 50px;
+    margin: 32px 0 32px 0;
+}
+
+.about-info h2 {
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.about .about-img img {
+    max-width: 500px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/13;
+    flex-wrap: wrap;
+}
+
+.skills-header {
+    margin: 12px 0 32px 0;
+}
+
+.skills .skills-header h1 {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(78, 42, 139);
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.icons-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.icons-box .icons {
+    flex-basis: 25%;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-bootstrap,
+.fa-js,
+.fa-github,
+.fa-wordpress,
+.fa-twitter,
+.fa-linkedin-in,
+.fa-instagram {
+    color: #666666;
+    display: inline-block;
+    transition: color 0.2s;
+}
+
+.fa-github,
+.fa-wordpress {
+    margin-top: 20px;
+}
+
+.fa-html5:hover {
+    color: #FF6D00;
+}
+
+.fa-css3-alt:hover {
+    color: #0277BD;
+}
+
+.fa-bootstrap:hover {
+    color: #673AB7;
+}
+
+.fa-js:hover {
+    color: #FFD600;
+}
+
+.fa-github:hover {
+    color: #211F1F;
+}
+
+.fa-wordpress:hover {
+    color: #21759b;
+}
+
+#cpp h4 {
+    margin-top: -6px;
+}
+
+.icons h4 {
+    font-size: 18px;
+    margin-top: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.projects {
+    display: flex;
+    grid-column: 1/13;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 30px 0 0 0;
+    background: #eeeeee;
+}
+
+.proj-img {
+    margin: 40px auto;
+}
+
+.proj-img img {
+    max-width: 550px;
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 35%;
+    margin: 5%;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+    padding: 12px;
+}
+
+.project-desc h1 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 50px;
+    color: rgb(78, 42, 139);
+}
+
+.project-desc h2 {
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column: 1/13;
+    background: #333333;
+    color: #d3d2d2;
+    font-family: 'Nunito', sans-serif;
+    padding: 15px;
+}
+
+.contact-header h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.contact-header h1:hover {
+    color: white;
+}
+
+.social {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.second-time {
+    cursor: pointer;
+    margin: 0;
+}
+
+.second-time:hover {
+    color: white;
+}
+
+.social i {
+    margin: 12px;
+    color: #666666;
+    transition: color 0.2s;
+}
+
+.social i:hover {
+    color: white;
+}
+
+.footer {
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.footer a {
+    color: inherit;
+}
+
+.footer h4 {
+    font-weight: 300;
+}
