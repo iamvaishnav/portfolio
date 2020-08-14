@@ -18,10 +18,15 @@ var navLinkItems = document.querySelectorAll('.menu-items>a');
 
 hamBurger.addEventListener('click', openMenu)
 navLinkItems.forEach(function(current) {
-    current.addEventListener('click', openMenu);
+    current.addEventListener('click', closeMenu);
 })
 
 function openMenu() {
     hamBurger.classList.toggle('open-menu');
-    navLink.classList.toggle('active');
+    navLink.classList.add('active');
+}
+
+function closeMenu() {
+    hamBurger.classList.toggle('open-menu');
+    navLink.classList.remove('active');
 }
