@@ -100,12 +100,12 @@
         <div class="contact-form">
             <div class="form-header" id="contact">Get in touch</div>
             <div class="form">
-                <form action="https://formspree.io/mlepvzzl">
+                <form method="POST" name="contact" data-netlify="true">
                     <input type="text" placeholder="Your Name" id="name" class="form-items" name="name" required>
                     <input type="email" placeholder="Your Email" id="mailId" class="form-items" name="mail" required>
                     <input type="text" placeholder="Your Subject" id="subject" class="form-items" name="sub">
                     <textarea name="message" id="message" cols="30" class="form-items" placeholder="How can I help you?" name="message"></textarea>
-                    <button type="submit" id="submit-btn" class="form-items" formmethod="POST" name="submit">
+                    <button type="submit" id="submit-btn" class="form-items" name="submit">
                         Send <i class="fas fa-paper-plane"></i>
                     </button>
 
