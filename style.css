@@ -1373,9 +1373,9 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 2;
-                clip-path: circle(100px at 100% -24%);
-                -webkit-clip-path: circle(100px at 100% -24%);
-                -moz-clip-path: circle(100px at 100% -24%);
+                clip-path: circle(100px at 100% -34%);
+                -webkit-clip-path: circle(100px at 100% -34%);
+                -moz-clip-path: circle(100px at 100% -34%);
                 transition: all 3s ease-out;
             }
             .menu-items.active {
