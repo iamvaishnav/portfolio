@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Vaishnav Nair</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <script src="https://kit.fontawesome.com/e7bb89ac4f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Staatliches&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat:wght@700&family=Mr+Dafoe&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="navbar">
-            <div class="logo"> <img src="logo.png" alt="logo"></div>
+            <div class="logo"> Vaishnav Nair</div>
 
 
             <div class="menu-items">
@@ -43,7 +43,7 @@
             </div>
 
         </div>
-        <div class="header-img"><img src="profile.svg"></div>
+        <div class="header-img"><img src="assets/profile.svg"></div>
         <div class="about">
             <div class="about-text">
                 <h1>About Me</h1>
@@ -53,7 +53,7 @@
             </div>
 
         </div>
-        <div class="about-img" id="about"><img src="about.svg"></div>
+        <div class="about-img" id="about"><img src="assets/about.svg"></div>
 
 
         <div class="skills-header" id="skills" data-aos="zoom-in">
@@ -73,7 +73,7 @@
                 <h4>javaScript</h4>
             </div>
             <div class="icons" id="cpp">
-                <img src="icons8-c++ .svg" id="c++">
+                <img src="assets/icons8-c++ .svg" id="c++">
                 <h4>C++</h4>
             </div>
             <div class="icons"><i class="fab fa-github fa-6x"></i>
@@ -82,57 +82,132 @@
             <div class="icons"><i class="fab fa-wordpress fa-6x"></i>
                 <h4>Wordpress</h4>
             </div>
-
+            <div class="icons">
+                <i class="fab fa-sass fa-6x"></i>
+                <h4>Sass</h4>
+            </div>
 
         </div>
 
 
-        <div class="projects-text">
+        <div class="projects">
             <div class="projects-header">
                 <h1>Projects</h1>
             </div>
-            <div class="projects-desc">
-                <p>I'm working with various projects right away . All of them will be shared in no time.</p>
-                <p>Meanwhile you can evaluate my progress in Github.</p>
+            <div class="projects-items">
+                <div class="projects-cards" id="rps">
+                    <img src="assets/rps.JPG" alt="rock-paper-scissors">
+                    <div class="projects-cards-details">
+                        <div class="projects-card-title">
+                            <a href="https://rockpaperscissors-frontendmentor.netlify.app/">Rock Paper Scissors &nbsp; <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="projects-cards-tags">
+                            <span class="tags">
+                                <h5>html</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>css</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>javaScript</h5>
+                            </span>
+                        </div>
+                        <div class="projects-cards-description">
+                            A simple Rock, Paper, Scissors game which can be played against computer.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="projects-cards" id="budgetly">
+                    <img src="assets/budgetly.JPG" alt="Budgetly">
+                    <div class="projects-cards-details">
+                        <div class="projects-card-title">
+                            <a href="https://budgetly.netlify.app/">Budgetly &nbsp; <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="projects-cards-tags">
+                            <span class="tags">
+                                <h5>html</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>css</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>javaScript</h5>
+                            </span>
+                        </div>
+                        <div class="projects-cards-description">
+                            Budgetly keeps track of how much money you have coming in and what you're spending it on.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="projects-cards" id="pig-game">
+                    <img src="assets/pig_game.JPG" alt="pig-game">
+                    <div class="projects-cards-details">
+                        <div class="projects-card-title">
+                            <a href="https://mypiggame.netlify.app/">Pig the Dice Game &nbsp; <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="projects-cards-tags">
+                            <span class="tags">
+                                <h5>html</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>css</h5>
+                            </span>
+                            <span class="tags">
+                                <h5>javaScript</h5>
+                            </span>
+                        </div>
+                        <div class="projects-cards-description">
+                            Pig is a simple two player game which can be described as a 'jeopardy dice game'. For 'jeopardy dice game' the dominant type of decision is whether or not to jeopardize previous gains by rolling for potential greater gains.
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
         </div>
-        <div class="project-img" id="projects"><img src="project_completed.svg"></div>
-        <div class="contact-form">
-            <div class="form-header" id="contact">Get in touch</div>
-            <div class="form">
-                <form method="POST" name="contact" data-netlify="true">
-                    <input type="text" placeholder="Your Name" id="name" class="form-items" name="name" required>
-                    <input type="email" placeholder="Your Email" id="mailId" class="form-items" name="mail" required>
-                    <input type="text" placeholder="Your Subject" id="subject" class="form-items" name="sub">
-                    <textarea name="message" id="message" cols="30" class="form-items" placeholder="How can I help you?" name="message" required></textarea>
-                    <button type="submit" id="submit-btn" class="form-items" name="submit">
+    </div>
+
+    <div class="contact-form">
+        <div class="form-header" id="contact">Get in touch</div>
+        <div class="form">
+            <form method="POST" name="contact" data-netlify="true">
+                <input type="text" placeholder="Your Name" id="name" class="form-items" name="name" required>
+                <input type="email" placeholder="Your Email" id="mailId" class="form-items" name="mail" required>
+                <input type="text" placeholder="Your Subject" id="subject" class="form-items" name="sub">
+                <textarea name="message" id="message" cols="30" class="form-items" placeholder="How can I help you?" name="message" required></textarea>
+                <button type="submit" id="submit-btn" class="form-items" name="submit">
                         Send <i class="fas fa-paper-plane"></i>
                     </button>
 
-                </form>
-            </div>
+            </form>
         </div>
-        <div class="contact-section">
-            <div class="contact-header">
-                <h1>follow me</h1>
-            </div>
-            <div class="social">
-                <a href="https://twitter.com/IamvaishnavNair"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://github.com/iamvaishnav"><i class="fab fa-github fa-2x second-time"></i></a>
-
-                <a href="https://www.linkedin.com/in/vaishnav-nair-b794071b2/"> <i class="fab fa-linkedin-in fa-2x"></i></a>
-
-                <a href="https://www.instagram.com/_vaishnav_nair_/"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="footer">
-                <h4>&copy; 2020 <a href="mailto:nairvaishnav007@gmail.com">Vaishnav Nair</a>. All rights reserved.</h4>
-            </div>
+    </div>
+    <div class="contact-section">
+        <div class="contact-header">
+            <h1>follow me</h1>
         </div>
+        <div class="social">
+            <a href="https://twitter.com/IamvaishnavNair"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://github.com/iamvaishnav"><i class="fab fa-github fa-2x second-time"></i></a>
+
+            <a href="https://www.linkedin.com/in/vaishnav-nair-b794071b2/"> <i class="fab fa-linkedin-in fa-2x"></i></a>
+
+            <a href="https://www.instagram.com/_vaishnav_nair_/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <div class="footer">
+            <h4>&copy; 2020 <a href="mailto:nairvaishnav007@gmail.com">Vaishnav Nair</a>. All rights reserved.</h4>
+        </div>
+    </div>
 
 
 
     </div>
-   
+
 
     <script src="app.js"></script>
 </body>
